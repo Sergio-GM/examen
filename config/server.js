@@ -1,15 +1,13 @@
 // /config/server.js
-
 module.exports = ({ env }) => ({
-  // Estas líneas resuelven los errores de HOST y PORT
   host: env('HOST', '0.0.0.0'),
   port: env.int('PORT', 1337),
   
+  // ESTA ES LA CONFIGURACIÓN CRÍTICA PARA APP_KEYS
   app: {
-    // La función env.array() convierte la cadena de la variable de entorno 
-    // 'APP_KEYS' en un array de strings, que es lo que Strapi requiere.
-    keys: env.array('APP_KEYS'),
+    // env.array() lee la cadena de 'APP_KEYS' y la convierte en un array de claves.
+    keys: env.array('APP_KEYS'), 
   },
-
-  // Puedes añadir otras configuraciones aquí si es necesario
+  
+  // Puedes dejar el resto de tu configuración aquí...
 });
