@@ -1,7 +1,7 @@
 export default ({ env }) => ({
   // Define el host para escuchar en todas las interfaces del contenedor de Render.
   host: env('HOST', '0.0.0.0'),
-  
+
   // Define el puerto, leyendo la variable de entorno PORT (1337 por defecto).
   port: env.int('PORT', 1337),
   
