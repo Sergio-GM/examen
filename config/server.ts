@@ -3,7 +3,7 @@ export default ({ env }) => ({
   host: env('HOST', '0.0.0.0'),
   
   // Define el puerto, leyendo la variable de entorno PORT (1337 por defecto).
-  port: env.int('PORT', 1337),
+  port: env.int('PORT', 4000),
   
   // Configuración de la aplicación (resolviendo el error de Middleware "strapi::session")
   app: {
