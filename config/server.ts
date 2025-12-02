@@ -11,7 +11,7 @@ export default ({ env }) => ({
     keys: env.array('APP_KEYS'), 
   },
   
-  // Opcional: Configuración del entorno de producción
+  // Opcional: Configuración del entorno de producció
   webhooks: {
     populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),
   },
