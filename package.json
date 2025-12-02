@@ -30,9 +30,9 @@
     "@types/react-dom": "^18",
     "typescript": "^5"
   },
-  "engines": {
-    "node": ">=20.0.0 <=24.x.x",
-    "npm": ">=6.0.0"
+ "engines": {
+  "node": ">=20.0.0 <=20.99.99", 
+  "npm": ">=6.0.0"
   },
   "strapi": {
     "uuid": "e06b8f38-83ee-45ce-862e-b918cd1c6fd1",
